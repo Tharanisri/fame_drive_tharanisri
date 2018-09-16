@@ -5,37 +5,44 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <style>
+        body{
+            background-attachment: fixed;
+            background-image: url("img5.jpg");
+        }
+        a{
+            color: black;
+        }
     </style>
     <body>
         <center>
         <nav>
             <h3>
-            <a href="https://www.google.com/">File</a>
+            <a href="https://www.google.com/">Google</a>
             </h3>
          </nav>
          <header><h2>SIGN UP</h2></header>
          <form id="signup">
              <div>
                  <label for="firstname">FirstName</label>
-                <input type="text" name="firstname"><br><br>
+                <input type="text" name="firstname" required><br><br>
             </div>
             <div>
                     <label for="lastname">LastName</label>&nbsp;
-                 <input type="text" name="lastname"><br><br>
+                 <input type="text" name="lastname" required><br><br>
                  </div>
                  <div>
                         <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 <input type="email" name="email"><br><br>
+                 <input type="email" name="email" required><br><br>
                  </div>
                  <div>
                         <label for="phonenumber">PhoneNo</label>&nbsp;&nbsp;
-                 <input type="text" name="Phonenumber" pattern="/^\d{10}$/"><br><br>
+                 <input type="tel" name="Phonenumber" required><br><br>
                  </div>
                  <div>
                 <label for="password">Password</label>&nbsp;&nbsp;
-                 <input type="password" name="password" pattern="/^\d{2,10}$/"><br><br>
+                 <input type="password" name="password" required><br><br>
                  </div>
-                 <button type="submit" class="btn btn-success" >Add me</button>
+                 <button type="submit" class="btn btn-success">Add me</button>
              </div>
          </form>
          <footer>In Sign Up form</footer>
